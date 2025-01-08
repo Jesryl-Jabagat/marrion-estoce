@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url(Photo/dancestudio.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 20px 20px 20px 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.logo {
+    width: 80px;
+    height: 100px;
+    cursor: pointer;
+}
+
+
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0  20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a.active {
+    color: rgb(102, 67, 2);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #13ed5f;
+    transition: all .5s ease all;
+}
+
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20 px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT US PAGE */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: #35d950 ;
+  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f3fffc;
+    color: #333;
+    
+}
+
+
+
+/* Navigations */
+.link-navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 50px 20px 20px 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #360404;
+}
+
+
+
+
+.link-navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0  20px;
+    position: relative;
+
+}
+
+.link-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.link-navbar ul li a.active {
+    color: rgb(102, 67, 2);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #13ed5f;
+    transition: all .5s ease all;
+}
+
+.link-navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.link-navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+
+/* Header Styles */
+.heading {
+    text-align: center;
+    background-color: #611b06; 
+    color: white;
+    padding: 100px 20px;
+}
+
+.heading h1 {
+    font-size: 2.5em;
+    margin-bottom: -10px;
+    color: #fcfcfc;
+}
+
+.heading p {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fffcfc;
+    margin-bottom: -50px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Image Styles */
+.about-image {
+    flex: 1 1 400px; 
+    
+}
+
+
+.about-image img {
+    width: 100%;
+    
+    height: auto;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 30px;
+    
+}
+
+/* Content Styles */
+.about-content {
+    flex: 1 2 600px; 
+    padding: 20px;
+    
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/* Services */
+.link-navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 50px 20px 20px 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #360404;
+}
+
+
+
+
+.link-navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0  20px;
+    position: relative;
+
+}
+
+.link-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.link-navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.link-navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+
+.body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #15d7ed; 
+    color: #333;
+    line-height: 1.4;
+   
+ 
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #611b06, #611b06); 
+    color: rgb(238, 213, 219); 
+    text-align: center;
+    padding: 100px 20px 20px 20px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+header h1 {
+    font-size: 4em; 
+    margin-bottom: 0px; 
+}
+
+header p {
+    font-size: 1.5em; 
+}
+
+/* Main Section  */
+main {
+    max-width: 1500px; 
+    margin: 50px auto; 
+    padding: 30px;
+    /* background: rgb(29, 233, 213); White background */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+
+/* Schedule Section */
+.schedule {
+    margin-bottom: 50px; 
+    text-align: center;
+    
+
+}
+
+.schedule h2 {
+   
+    color: #2a060e;
+    margin-bottom: 10px; 
+    font-size: 3.9em; 
+    justify-content: center;
+}
+
+.schedule ul {
+    list-style-type: none; 
+    padding: 0; 
+   
+}
+
+.schedule li {
+    padding: 15px; 
+    max-width: 1000px;
+    align-items: center;
+    margin-left: 170px;
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 20px; 
+    border: 3px solid #113720; 
+    background-color: #fff; 
+    transition: transform 0.5s, background 0.3s; /* Transition effects */
+}
+
+.schedule li:hover {
+    transform: translateY(-20px); 
+    background-color: #29dfe9; 
+}
+
+/* Instructors Section */
+
+.instructors {
+    background: #42c8e3; 
+    padding: 50px; 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 100px 4px 100px rgba(50, 119, 88, 0.1); 
+    margin-top: 50px; 
+    width: 1500px;
+    margin-left: -30px;
+}
+
+.instructors h2 {
+    color: #031736; 
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 3.5em; /
+}
+
+/* Instructor List */
+.instructors ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+/* Individual Instructor */
+.instructors li {
+    display: flex; 
+    align-items: center; 
+    /* border: 2px solid #16100f; */
+     /* Border around each instructor */
+    border-radius: 40px; 
+    margin-bottom: 20px;
+    padding: 10px; 
+    transition: transform 0.5s; 
+    background-color: white; 
+}
+
+.instructors li:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 20px rgba(167, 36, 36, 0.3); 
+}
+
+/* Instructor Image */
+.instructors img {
+    width: 300px; 
+    height: 250px; 
+    border-radius: 10%; 
+    /* border: 3px solid #16539d; Border around images */
+    margin-right: 20px; 
+    margin-left: 10px;
+}
+
+/* Instructor  Information */
+.instructors div {
+    flex: 2; 
+}
+
+.instructors h3 {
+    color: #333; 
+    margin-bottom: 5px; 
+    font-size: 1.2em; 
+}
+
+.instructors p {
+    color: #320708; 
+    margin: 20; 
+    font-size: 1.1em; 
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .instructors li {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .schedule li {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .instructors img {
+        margin-bottom: 10px; /* Space below image  */
+    }
+}
+
+
+
